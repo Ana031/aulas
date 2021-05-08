@@ -1,0 +1,53 @@
+<%- include('partials/header.ejs'); %>
+    <body id='#body'>
+        <div class="container Pokedex">
+            <div id="pokedex" class="card">
+                <div class="card-header">
+                    <h3>Pokédex</h3>
+                </div>
+                <div class="card-body">
+                    <h5>Pokémon</h5>
+                    <div class="container-InfoPokemons">
+                        <input id="nomePokemon" type="text" class="form-control" style="float: left; text-transform:uppercase;" name="nomePokemon" placeholder="Ex: Pikachu">
+                        <button onclick="filtrarPokemon();" class="btn btn-primary" style="margin-left: 0.3%;">Buscar</button>
+                    </div>
+                    <hr>
+                    <div class="card-header" style="height:auto;overflow:hidden;text-align: center;">
+                        <h3 id="Nome" style="float: left;"></h3>
+                        <img id="SpritePokemon" style="float: right;"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="container-InfoPokemons">
+                            <div class="container-pokemon-info">
+                                <label>Ataque:</label>
+                                <input id="Ataque" type="text" class="form-control" readonly/>
+                            </div>
+                            <div class="container-pokemon-info">
+                                <label>Defesa:</label>
+                                <input id="Defesa" type="text" class="form-control" readonly/>
+                            </div>
+                            <div class="container-pokemon-info">
+                                <label>Estamina:</label>
+                                <input id="Estamina" type="text" class="form-control" readonly/>
+                            </div>
+                        </div>
+                        <div class="container-InfoPokemons">
+                            <div class="container-pokemon-info">
+                                <label>Tipo:</label>
+                                <input id="Tipo" type="text" class="form-control" readonly/>
+                            </div>
+                            <div class="container-pokemon-info">
+                                <label>Vantagens:</label>
+                                <input id="Vantagens" type="text" class="form-control" readonly/>
+                            </div>
+                            <div class="container-pokemon-info">
+                                <label>Desvantagens:</label>
+                                <input id="Desvantagens" type="text" class="form-control" readonly/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<%- include('partials/footer.ejs'); %>
